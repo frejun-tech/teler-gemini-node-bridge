@@ -8,7 +8,7 @@ export const systemRouter = Router();
 systemRouter.get('/', async (_req: Request, res: Response) => {
     const currentNgrokURL = await getServerDomain();
     res.json({
-        "message": "Teler Elevenlabs Node Bridge is running", 
+        "message": "Teler Gemini Node Bridge is running", 
         "status": "healthy",
         "server_domain": currentNgrokURL
     });
@@ -17,7 +17,7 @@ systemRouter.get('/', async (_req: Request, res: Response) => {
 systemRouter.get('/health', (_req: Request, res: Response) => {
     res.json({
         "status": "healthy", 
-        "service": "teler-elevenlabs-node-bridge"}
+        "service": "teler-gemini-node-bridge"}
     )
 });
 

@@ -1,6 +1,6 @@
-# Teler-Elevenlabs-Node-Bridge
+# Teler-Gemini-Node-Bridge
 
-A reference integration between Teler and Elevenlabs in Node, based on [Media Streaming Bridge](https://frejun.ai/docs/category/media-streaming/) over WebSockets.
+A reference integration between Teler and Gemini in Node, based on [Media Streaming Bridge](https://frejun.ai/docs/category/media-streaming/) over WebSockets.
 
 
 ## Setup
@@ -8,7 +8,7 @@ A reference integration between Teler and Elevenlabs in Node, based on [Media St
 1. **Clone and configure:**
 
    ```bash
-   git clone https://github.com/rupak-stack/teler-gemini-node-bridge.git
+   git clone https://github.com/shantanubindhani/teler-gemini-node-bridge.git
    cd teler-gemini-node-bridge
    cp .env.example .env
    # Edit .env with your actual values
