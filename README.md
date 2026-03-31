@@ -8,7 +8,7 @@ A reference integration between Teler and Gemini in Node, based on [Media Stream
 1. **Clone and configure:**
 
    ```bash
-   git clone https://github.com/shantanubindhani/teler-gemini-node-bridge.git
+   git clone https://github.com/frejun-tech/teler-gemini-node-bridge.git
    cd teler-gemini-node-bridge
    cp .env.example .env
    # Edit .env with your actual values
