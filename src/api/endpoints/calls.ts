@@ -39,6 +39,6 @@ callRouter.post('/flow', (_req: Request, res: Response) => {
         ws_url:      mediaStreamUrl,
         chunk_size:  500,
         sample_rate: "16k",
-        record:      true,
+        record:      false,
     });
 });

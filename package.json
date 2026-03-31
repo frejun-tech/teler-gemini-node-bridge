@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@frejun/teler": "^1.0.7",
+    "@google/genai": "^1.47.0",
     "axios": "^1.13.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",

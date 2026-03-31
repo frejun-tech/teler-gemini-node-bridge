@@ -15,25 +15,10 @@ const connector = new StreamConnector(
     remoteStreamHandler()
 );
 
-
+export let remoteWsURL: WebSocket;
 wss.on('connection', async (callWs: WebSocket) => {
     console.log('Teler connected to WebSocket');
-    const remoteWsURL = await connector.bridgeStream(callWs as any);
-    remoteWsURL.onopen = () => {
-        console.log('WebSocket Connected');
-
-        const configMessage = {
-            config: {
-                model: `models/${cfg.geminiModel}`,
-                responseModalities: ['AUDIO'],
-                systemInstruction: {
-                    parts: [{ text: 'You are a helpful assistant.' }]
-                }
-            }
-        };
-        remoteWsURL.send(JSON.stringify(configMessage));
-        console.log('Configuration sent');
-    };
+    remoteWsURL = await connector.bridgeStream(callWs as any);
 });
 
 
